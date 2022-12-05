@@ -42,7 +42,8 @@ function startGame() {
     resetValues()
     countdown()
 }
-function submitText() {
+function submitText(event) {
+    event.preventDefault()
     if (inputUserText.value == currentWord.textContent) {        
         availableWords.splice(randomIndex, 1)             
         guessedWords.push(currentWord.textContent)
