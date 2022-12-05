@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Monoton&family=Snippet&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Snippet&family=Special+Elite&display=swap'); </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./scripts/dictionary_array.js"></script>    
+    <script defer src="./scripts/script.js"></script>
+    <title>Typer D</title>
+</head>
+<body>
+    <div class="panel" id="welcome-panel">
+        <h1>Welcome &nbsp;&nbsp;&nbsp;&nbsp;to &nbsp;&nbsp;&nbsp;&nbsp;Typer &nbsp;&nbsp;&nbsp;&nbsp;D!</h1>
+        <p>Type each word as fast as you can <span id="emoji-train">🚊</span></p>
+        <button id="button-start">Start</button>
+    </div>     
+
+    <div class="panel inactive-panel" id="play-panel">        
+        <p>Type down the following word:</p>
+        <h2 id="current-word">Word X</h2>
+        <form action="#">
+            <input id="input-user-text" type="text">
+            <button id="button-submit-text">Submit word</button>
+        </form>        
+        <div id="correct-input-reward" class="correct-input-reward-invisible">CORRECT!</div>
+        <p id="p-remaining-time"> Remaining time: <span id="timer">10</span> seconds</p>
+        <p id="p-score">Score: <span id="score-count">0</span></p>
+        <!-- <button id="button-restart">Restart game</button> -->
+    </div>    
+
+    <div class="panel inactive-panel" id="finish-panel">        
+        <h2 id="ending-text"></h2>
+        <p id="p-final-score">Your final score was: <span id="score-show">0</span></p>
+        <button id="button-again">Play again</button>
+    </div>
+</body>
+</html>

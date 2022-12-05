@@ -1,0 +1,170 @@
+/* Canvas size and background */
+html {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 200px);
+    background: url(../images/background.jpg);
+    background-size: cover;     /* Default option, really */
+    background-repeat: no-repeat;    
+}
+
+
+
+/* General panels */
+.inactive-panel {
+    display: none!important;
+}
+.panel {
+    width: 500px;
+    height: 350px;
+    background-color: rgba(255, 255, 250, 0.719);
+    border-radius: 20px;
+    margin: 200px auto;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'Monoton';
+    font-size: 1.8rem;
+}
+p, input, div {
+    font-family: 'Snippet';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* Welcome panel */
+#welcome-panel{    
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+}
+#welcome-panel h1 {
+    margin-top: 40px;
+}
+#emoji-train{
+    font-size: 1.8rem;
+}
+#welcome-panel button {
+    font-family: 'Snippet';
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;    
+    width: 130px;
+    height: 50px;    
+    border-radius: 28px;
+    border: 2px solid #000;    
+}
+#welcome-panel button:hover {
+    background-color: rgb(228, 228, 228);
+}
+#welcome-panel button:focus{
+    outline: 1px rgb(255, 138, 138) solid;
+}
+
+
+#welcome-panel button:active {
+    background-color: rgb(204, 204, 204);
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+
+/* Play panel */
+#play-panel {
+    position: relative;
+}
+#play-panel p:first-child {
+    display: inline-block;
+    margin-top: 30px;
+}
+#current-word {
+    font-family: 'Special Elite';
+    margin-top: 20px;
+}
+#play-panel input {
+    margin-top: 10px;
+    width: 290px;
+    height: 30px;
+    border-radius: 18px;    
+    text-align: center;
+}
+#play-panel input:focus {
+    outline: 0px;    
+}
+#play-panel button{    
+    display: none;
+    /* margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    padding: 3px 10px; */
+}
+#p-remaining-time{
+    margin-top: 35px;
+    font-size: 1rem;
+}
+#timer {
+    font-size: 1.3rem;
+}
+#p-score{
+    font-size: 1rem;
+}
+#score-count{
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+#correct-input-reward{        
+    position: absolute;    
+    left: 211px;
+    top: 275px;   
+    transition: transform 1000ms, color 600ms;
+    transition-timing-function: ease-out;
+}
+.correct-input-reward-invisible {
+    visibility: hidden;
+    color: rgb(0, 0, 0);    
+}
+.correct-input-reward-visible {
+    visibility: visible;
+    transform: scale(2) rotate(-150deg);
+    color: rgba(255, 0, 234, 0);    
+}
+
+
+/* Finish panel */
+#finish-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#finish-panel h2{    
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-top: 70px;
+}
+#p-final-score{
+    font-size: 1.2rem;
+}
+#score-show{
+    font-size: 1.7rem;
+}
+#finish-panel button{
+    font-family: 'Snippet';
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;    
+    width: 130px;
+    height: 46px;    
+    border-radius: 28px;
+    border: 1px solid #000;    
+}
+#finish-panel button:focus{        
+    outline: 1px rgb(255, 138, 138) solid;
+}
